@@ -1,0 +1,251 @@
+@font-face {
+    font-family: 'Palatino linotype';
+    src: url('../assets/font/pala.ttf') format('truetype'),
+        url('../assets/font/palab.ttf') format('truetype'),
+        url('../assets/font/Palatino Linotype.ttf') format('truetype');
+}
+
+body {
+    background-color: #eeebe4;
+    font-family: 'palatino linotype';
+}
+
+/* Fade In */
+
+.animate {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.one {
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+/* Navbar */
+
+nav a {
+    color: #b6b0a4;
+}
+
+nav a:hover {
+    color: black;
+    transition: 0.5s ease;
+}
+
+.active {
+    color: black !important;
+}
+
+.navbar-nav {
+    position: relative;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    width: 100%;
+    background-color: #cecdc8;
+}
+
+.dropdown-menu > li {
+    display: inline-block;
+}
+
+.dropdown-menu > li a:hover {
+    background: none;
+}
+
+li.dropdown {
+    position: static;
+}
+
+nav .navbar-collapse .navbar-nav form {
+    margin-left: auto;
+}
+
+.hover::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width .3s
+}
+
+.hover:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+hr {
+    border-color: black;
+    opacity: 1;
+}
+
+/* Search Bar */
+
+#toggle-search {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+#toggle-search:hover {
+    color: #b6b0a4;
+}
+
+/* Footer */
+
+footer {
+    background-color: #b6b0a4;
+}
+
+
+/* Homepage */
+
+#homepage .main-body {
+    text-align: center;
+    padding: 200px;
+    letter-spacing: 6px;
+    word-spacing: 10px;
+}
+
+#homepage .main-body .btn {
+    background-color: #696252;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 0px 70px;
+}
+
+#homepage footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+}
+
+/* Article Main Body */
+
+#articles .main-body .title-section {
+    text-align: center;
+}
+
+/* Card style & Hover */
+
+#articles .top-card a {
+    text-decoration: none;
+}
+
+#articles .card {
+    color: black;
+}
+
+#articles .card img:hover {
+    cursor: pointer;
+}
+
+/* Horizontal Card */
+
+#articles .top-card {
+    margin-top: 200px;
+}
+
+#articles .top-card .card {
+    background-color: transparent;
+    border: none;
+}
+
+#articles .top-card .card-body {
+    padding-top: 0px;
+    margin: 0px 40px;
+    letter-spacing: 3px;
+    word-spacing: 8px;
+}
+
+#articles .top-card .card-body h1 {
+    font-weight: bold;
+}
+
+/* Card-deck-row */
+
+#articles .card-deck-row {
+    margin-top: 40px;
+    margin-bottom: 200px;
+}
+
+#articles .card-deck-row .card {
+    background-color: transparent;
+    border: none;
+}
+
+#articles .card-deck-row .card .card-img-top {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+}
+
+#articles .card-deck-row .card .card-body {
+    letter-spacing: 3px;
+    word-spacing: 8px;
+}
+
+#articles .card-deck-row .card .card-body h2 {
+    font-weight: bold;
+}
+
+/* Article */
+
+#article .main-body .title-section {
+    text-align: center;
+}
+
+#article .article-header {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#article .article-header .article-title {
+    font-weight: bold;
+}
+
+#article .article-body {
+    margin: 0px 100px;
+}
+
+#article .article-body p {
+    letter-spacing: 2px;
+    word-spacing: 6px;
+    margin-bottom: 30px;
+}
