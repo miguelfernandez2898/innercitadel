@@ -12,6 +12,9 @@ body {
 
 #homepage {
     background-image: url(../images/1920x1080.jpg);
+    background-size: cover;
+    height: auto;
+    width: 100%;
 }
 
 /* Fade In */
